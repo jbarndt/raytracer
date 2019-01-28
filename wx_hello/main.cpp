@@ -77,7 +77,7 @@ public:
         wxInitAllImageHandlers();
 
         wxBoxSizer* sizer = new wxBoxSizer(wxHORIZONTAL);
-        frame = new wxFrame(NULL, wxID_ANY, wxT("A sphere"), wxPoint(50,50), wxSize(800,600));
+        frame = new wxFrame(NULL, wxID_ANY, wxT("A sphere"), wxPoint(50,50), wxSize(400,400));
 
         drawPane = new wxImagePanel( frame, wxT("image.jpg"), wxBITMAP_TYPE_JPEG);
         sizer->Add(drawPane, 1, wxEXPAND);
