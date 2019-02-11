@@ -5,7 +5,7 @@
 #include "float.h"
 
 vec3 color(const ray& r){
-	vec3 unit_direction = 20*unit_vector(r.direction());
+	vec3 unit_direction = 10.83*unit_vector(r.direction());
 	float sin_xy_squared = sin((unit_direction.x()*unit_direction.x()*unit_direction.y()*unit_direction.y()));
 	float t = 0.5*(1+ sin_xy_squared);
 	return t*vec3(1.0,1.0,1.0);
